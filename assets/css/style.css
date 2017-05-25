@@ -29,7 +29,7 @@ body {
 .tit-geral {
     font-size: 32px;
     font-weight: 800;
-    color: #4169E1;
+    color: #26205c;
     text-transform: uppercase;
     margin-top: 40px;
     margin-bottom: 60px;
@@ -37,7 +37,7 @@ body {
 .sub-geral {
     font-size: 16px;
     font-weight: 700;
-    color: #4169E1;
+    color: #26205c;
     text-transform: uppercase;
 }
 .p-geral {
@@ -50,16 +50,21 @@ body {
 header {
     position: fixed;
     width: 100%;
-    height: 60px;
+    height: 80px;
     z-index: 200;
     top: 0;
-    border-bottom: 1px solid #4169E1;
+    border-bottom: 1px solid #fff;
+}
+.logo {
+    width: 90px;
+    margin-top: -10px;
 }
 .nav {
-    height: 59px;
+    height: 79px;
 }
 .navbar-default {
-    background-color: #fff;
+    height: 100%;
+    background-color: #26205c;
     border-color: transparent;
     border-radius: 0;
     margin-bottom: 0;
@@ -68,20 +73,23 @@ header {
 .nav ul.nav.navbar-nav {
     margin-right: -30px;
     float: right;
+    display: flex;
+    height: 79px;
+    align-items: center;
 }
 .nav ul>li>a {
     font-size: 16px;
-    color: #4169E1!important;
+    color: #fff!important;
     font-weight: 600;
     text-transform: uppercase;
 }
 .nav ul>li>a:hover {
-    color: #FFD700!important;
-    text-shadow: 1px 1px 2px #4169E1;
+    color: #ef9d37!important;
+    text-shadow: 1px 1px 2px #26205c;
 }
 .parallax-window {
     min-height: 640px;
-    background: rgba(65, 105, 225, 0.3);
+    background: rgba(38, 32, 92, 0.3);
 }
 .parallax-window2 {
     min-height: 640px;
@@ -97,7 +105,7 @@ header {
 .parallax-window .content {
     width: 40%;
     height: 660px;
-    background: rgba(65, 105, 225, 0.6);
+    background: rgba(38, 32, 92, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,10 +128,10 @@ header {
 }
 
 
-/* --- VT --- */
+/* --- SERVICOS --- */
 #servicos {
     padding: 60px 0;
-    background: #4169E1;
+    background: #26205c;
 }
 #servicos .tit-geral,
 #servicos .sub-geral,
@@ -152,7 +160,7 @@ header {
 #links .icon {
     width: 10px;
     height: 10px;
-    background: #FFD700;
+    background: #ef9d37;
     position: absolute;
 }
 #links ul>li {
@@ -160,22 +168,123 @@ header {
 }
 
 
+/* --- CONHECIMENTO --- */
+#conhecimento {
+    padding: 60px 0;
+}
 
 
-
-footer {
+/* --- CONTATO --- */
+#contato {
+    padding: 60px 0;
+    background: #26205c;
+}
+#contato .tit-geral {
+    color: #fff;
+}
+#contato form input,
+#contato form textarea {
     width: 100%;
-    height: 1000px;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 30px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff
+}
+#contato form textarea {
+    height: 250px;
+}
+#contato ::-webkit-input-placeholder {
+   color: #fff;
+}
+#contato :-moz-placeholder {
+   color: #fff;
+}
+#contato ::-moz-placeholder {
+   color: #fff;
+}
+#contato :-ms-input-placeholder {
+   color: #fff;
+}
+.botao {
+    width: 230px!important;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #26205c!important;
+    background: #ef9d37!important;
+    border: 1px solid #ef9d37!important;
+}
+.botao:hover {
+    background: transparent!important;
+    color: #ef9d37!important;
+    border: 1px solid #ef9d37!important; 
+}
+
+/* --- FOOTER - RODAPE --- */
+footer #rodape {
+    width: 100%;
+    min-height: 80px;
+    background: #26205c;
+    border-top: 1px solid #ef9d37;
+}
+footer #rodape address {
+    margin-bottom: 0;
+}
+footer #rodape address span {
+    font-size: 16px;
+    color: #fff;
+    margin-right: 20px;
+    display: inline-flex;
+    height: 80px;
+    align-items: center;
+}
+footer #rodape address span i {
+    color: #ef9d37;
+    margin-right: 5px;
+}
+footer #rodape .redes-sociais {
+    float: right;
+    display: inline-flex;
+    height: 80px;
+    align-items: center;
+}
+footer #rodape .redes-sociais i {
+    font-size: 28px;
+    margin-left: 15px;
+    color: #fff;
+}
+footer #rodape .redes-sociais a:hover i {
+    color: #ef9d37;
 }
 
 
 
-
+@media (max-width: 767px) {
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border-color: #ef9d37;
+        background: #26205c;
+        height: 360px;
+        text-align: center;
+        position: relative;
+    }
+    .nav ul.nav.navbar-nav {
+        float: none;
+        display: block;
+        height: 350px;
+    }
+    .nav>li {
+        margin-top: 15px;
+    }
+    .parallax-window .content {
+        width: 75%;
+        height: 640px;
+    }
+}
 @media (min-width: 768px) and (max-width: 870px) {
 
-}
-@media (max-width: 767px) {
-    
 }
 @media (min-width: 787px) and (max-width: 999px) {
 
