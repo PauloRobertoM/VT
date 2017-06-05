@@ -1,4 +1,3 @@
-
 * {
     outline: none;
 }
@@ -27,7 +26,7 @@ body {
 
 /* --- GERAL --- */
 .tit-geral {
-    font-size: 32px;
+    font-size: 42px;
     font-weight: 800;
     color: #26205c;
     text-transform: uppercase;
@@ -39,10 +38,11 @@ body {
     font-weight: 700;
     color: #26205c;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 .p-geral {
-    font-size: 14px;
-    margin-bottom: 20px;
+    font-size: 16px;
+    margin-bottom: 30px;
 }
 
 
@@ -50,17 +50,17 @@ body {
 header {
     position: fixed;
     width: 100%;
-    height: 80px;
+    height: 95px;
     z-index: 200;
     top: 0;
     border-bottom: 1px solid #fff;
 }
 .logo {
-    width: 90px;
-    margin-top: -10px;
+    width: 216px;
+    margin-top: -13px;
 }
 .nav {
-    height: 79px;
+    height: 94px;
 }
 .navbar-default {
     height: 100%;
@@ -74,7 +74,7 @@ header {
     margin-right: -30px;
     float: right;
     display: flex;
-    height: 79px;
+    height: 95px;
     align-items: center;
 }
 .nav ul>li>a {
@@ -102,21 +102,28 @@ header {
     height: 840px;
     object-fit: cover;
 }
-.parallax-window .content {
-    width: 40%;
-    height: 660px;
+.carousel-inner,
+.carousel-inner img {
+    width: 100%;
+    height: 580px;
+}
+.carousel-caption {
+    width: 100%;
+    height: 580px;
     background: rgba(38, 32, 92, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
+    left: 0;
+    top: 0;
 }
-.parallax-window .content h1 {
+.carousel-caption h1 {
     font-size: 48px;
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
 }
-.parallax-window .content p {
+.carousel-caption p {
     font-size: 18px;
     color: #fff;
 }
@@ -124,13 +131,24 @@ header {
 
 /* --- VT --- */
 #vt {
-    padding: 60px 0;
+    padding: 150px 0;
+}
+#vt .frases .carousel-caption {
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    background: rgba(38, 32, 92, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
 }
 
 
 /* --- SERVICOS --- */
 #servicos {
-    padding: 60px 0;
+    padding: 150px 0;
     background: #26205c;
 }
 #servicos .tit-geral,
@@ -138,11 +156,29 @@ header {
 #servicos .p-geral {
     color: #fff;
 }
+#servicos .p-geral {
+    font-size: 14px;
+    text-align: justify;
+}
+#servicos .tit-geral {
+    text-align: right;
+}
 #servicos img {
-    width: 50px;
+    width: 40px;
     float: left;
     margin-right: 10px;
     margin-bottom: 40px;
+    margin-top: 10px;
+}
+#servicos .fa {
+    font-size: 20px;
+    color: #fff;
+    float: left;
+    margin-right: 10px;
+    background: #808fc4;
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: 15px;
 }
 
 
@@ -176,7 +212,7 @@ header {
 
 /* --- CONTATO --- */
 #contato {
-    padding: 60px 0;
+    padding: 150px 0;
     background: #26205c;
 }
 #contato .tit-geral {
@@ -260,7 +296,6 @@ footer #rodape .redes-sociais a:hover i {
 }
 
 
-
 @media (max-width: 767px) {
     .navbar-default .navbar-collapse,
     .navbar-default .navbar-form {
@@ -278,16 +313,41 @@ footer #rodape .redes-sociais a:hover i {
     .nav>li {
         margin-top: 15px;
     }
-    .parallax-window .content {
-        width: 75%;
-        height: 640px;
+    .carousel-caption {
+        width: 100%;
+        height: 400px;
+    }
+    .carousel-inner,
+    .carousel-inner img {
+        width: 100%;
+        height: 400px;
+    }
+    .carousel-inner img {
+        height: 400px!important;
+        object-fit: cover;
+    }
+    .carousel-caption h1 {
+        font-size: 24px;
+    }
+    .carousel-caption p {
+        font-size: 14px;
+    }
+    #contato,
+    #vt,
+    #servicos {
+        padding: 0;
     }
 }
-@media (min-width: 768px) and (max-width: 870px) {
-
+@media (min-width: 768px) and (max-width: 881px) {
+    .nav ul>li>a {
+        font-size: 14px;
+        padding: 10px 10px;
+    }
 }
-@media (min-width: 787px) and (max-width: 999px) {
-
+@media (max-width: 991px) {
+    #servicos .tit-geral {
+        text-align: left;
+    }
 }
 @media (min-width: 768px) and (max-width: 1010px) {
 

@@ -1,6 +1,5 @@
 (function($, window) {
-	$('.parallax-window').parallax({imageSrc: 'assets/images/back.webp'});
-	$('.parallax-window2').parallax({imageSrc: 'assets/images/back2.webp'});
+	$('.parallax-window2').parallax({imageSrc: 'assets/images/back.jpg'});
 
 	$('.nav a').on('click', function(){
 	    $('.btn-navbar').click(); //bootstrap 2.x
